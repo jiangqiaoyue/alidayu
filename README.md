@@ -28,3 +28,6 @@
 ## 第三 下载PHP版阿里大鱼SDK
   
   [下载地址](https://help.aliyun.com/document_detail/55359.html "阿里大鱼SDK PHP版")
+## 第四 把阿里大鱼拷贝到你的第三方类库目录
+sdk里有个api_demo目录,里面有个SmsDemo.php，那个就是发短信的demo，傻瓜式的照着那个，把app_key和app_secret改成你自己的，把短信签名和模板code
+改成你自己的就可以愉快的玩耍了
