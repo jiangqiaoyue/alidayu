@@ -32,7 +32,7 @@
 sdk里有个api_demo目录,里面有个SmsDemo.php，那个就是发短信的demo，傻瓜式的照着那个引入文件，然后把app_key和app_secret改成你自己的，把短信签名和模板code
 改成你自己的就可以愉快的玩耍了
 
-```
+```php
 <?php
 namespace app\index\controller;
 use think\Session;
@@ -77,9 +77,9 @@ class Index
    	    $domain = "dysmsapi.aliyuncs.com";
 
    	    // TODO 此处需要替换成开发者自己的AK (https://ak-console.aliyun.com/)
-   	    $accessKeyId = "LTAIEKNhxiXYZiHD"; // AccessKeyId
+   	    $accessKeyId = "aaaaaaaaaaaaa"; // AccessKeyId
 
-   	    $accessKeySecret = "BS46dJkdxWSrFPiTFZAnhNyfS7w12D"; // AccessKeySecret
+   	    $accessKeySecret = "bbbbbbbbbbb"; // AccessKeySecret
 
    	    // 暂时不支持多Region
    	    $region = "cn-hangzhou";
@@ -119,10 +119,10 @@ class Index
    	    $request->setPhoneNumbers($phone);
 
    	    // 必填，设置签名名称，应严格按"签名名称"填写，请参考: https://dysms.console.aliyun.com/dysms.htm#/develop/sign
-   	    $request->setSignName("舒宁");
+   	    $request->setSignName("你申请的签名");
 
    	    // 必填，设置模板CODE，应严格按"模板CODE"填写, 请参考: https://dysms.console.aliyun.com/dysms.htm#/develop/template
-   	    $request->setTemplateCode("SMS_140115879");
+   	    $request->setTemplateCode("你申请的模版code");
 
    	    // 可选，设置模板参数, 假如模板中存在变量需要替换则为必填项
    	    $request->setTemplateParam(json_encode(array(  // 短信模板中字段的值
