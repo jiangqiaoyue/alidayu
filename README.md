@@ -6,7 +6,8 @@
 ## 第一 注册阿里大鱼服务
   
   登录阿里云账号->产品与服务->云通信->短信服务->开通短信服务功能
-  进入短信服务管理控制台 概览->AccessKey->获取AccessKey->根据自己的情况，选择直接使用AccessKey或者是使用ram子账户，获取到你的       AccessKeyId 和 AccessKeySecret
+  进入短信服务管理控制台 
+  概览->AccessKey->获取AccessKey->根据自己的情况，选择直接使用AccessKey或者是使用ram子账户，获取到你的AccessKeyId 和  AccessKeySecret
   
 ## 第二 在控制台完成模板与签名的申请，获得调用接口必备的参数
   
